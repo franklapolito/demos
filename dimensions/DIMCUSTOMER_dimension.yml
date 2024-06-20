@@ -1,0 +1,18 @@
+unique_name: DIMCUSTOMER_dimension
+object_type: dimension
+label: Customer Dimension
+hierarchies:
+  - unique_name: DIMCUSTOMER_dimension Hierarchy
+    label: Customer Hierarchy
+    levels:
+      - unique_name: DIMCUSTOMER_dimension Level
+level_attributes:
+  - unique_name: DIMCUSTOMER_dimension Level
+    label: Customer Level
+    contains_unique_names: false
+    dataset: DIMCUSTOMER
+    is_unique_key: false
+    key_columns:
+      - customerkey
+    name_column: fullname
+type: standard

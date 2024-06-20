@@ -2,4 +2,14 @@ unique_name: DemoModel1
 object_type: model
 label: DemoModel1
 metrics: []
-relationships: []
+relationships:
+  - unique_name: >-
+      FACTINTERNETSALES_customerkey_to_DIMCUSTOMER_dimension_DIMCUSTOMER_dimension
+      Level
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - customerkey
+    to:
+      dimension: DIMCUSTOMER_dimension
+      level: DIMCUSTOMER_dimension Level

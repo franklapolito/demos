@@ -1,7 +1,9 @@
 unique_name: DemoModel1
 object_type: model
 label: DemoModel1
-metrics: []
+metrics:
+  - unique_name: m_FACTINTERNETSALES_salesamount_abg
+  - unique_name: m_FACTINTERNETSALES_orderquantity_avg
 relationships:
   - unique_name: >-
       FACTINTERNETSALES_customerkey_to_DIMCUSTOMER_dimension_DIMCUSTOMER_dimension
